@@ -1,2 +1,2 @@
-# Company-Website
+# Company Website
 Company Website

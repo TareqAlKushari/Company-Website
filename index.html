@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="facebook" viewBox="0 0 16 16">
+      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+    </symbol>
+  </svg>
+  <header class="site-header text-center" style="z-index: 2000;">
+    <nav class="navbar navbar-default navbar-expand-lg navbar-dark d-none d-lg-block navbar-fixed-top" id="myTopnav" style="z-index: 2000;">
+      <div class="container">
+        <div class="logo text-center">
+          <img src="assets/images/logo.jpeg" class="text-center" alt="...">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="layouts/services.html" role="button" aria-expanded="false">الخدمات</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{{route('pages.services2', $dep->id )}}">{{$dep->name}}</a></li>
+                <li><a class="dropdown-item" href="{{route('pages.services2', $dep->id )}}">{{$dep->name}}</a></li>
+                <li><a class="dropdown-item" href="{{route('pages.services2', $dep->id )}}">{{$dep->name}}</a></li>
+                <li><a class="dropdown-item" href="{{route('pages.services2', $dep->id )}}">{{$dep->name}}</a></li>
+                <li><a class="dropdown-item" href="{{route('pages.services2', $dep->id )}}">{{$dep->name}}</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layouts/about.html">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layouts/profile.html">بروفايل الشركة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layouts/contact.html">تواصل معنا</a>
+            </li>
+          </ul>
+           <!-- <ul class="nav justify-content-end">
+            <li class="">
+              <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/MDBootstrap" rel="nofollow" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul> -->
+          <div>
+            <a href="layouts/contact.html" type="button" class="btn btn-light">اطلب خدمة</a>
+          </div>
+        </div>
+        <div>
+          <ul class="nav justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <main class="home">
+        <div class="container site-content">
+            <section class="section top-section">
+            <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{ asset('images/slide1.png') }}" class="mySlides bg-img d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('images/slide2.jpeg') }}" class="mySlides bg-img d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('images/slide3.jpg') }}" class="mySlides bg-img d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('images/slide4.jpg') }}" class="mySlides bg-img d-block w-100" alt="...">
+                </div>
+                </div>
+            </div> -->
+
+            <!-- Slide Show -->
+            <section class="carousel">
+                <img class="mySlides" src="assets/images/slide1.png" style="width:100%">
+                <img class="mySlides" src="assets/images/slide2.jpeg" style="width:100%">
+                <img class="mySlides" src="assets/images/slide3.jpg" style="width:100%">
+                <img class="mySlides" src="assets/images/slide4.jpg" style="width:100%">
+            </section>
+            
+            <!-- Main Content -->
+            <div class="container main-content">
+                <div class="content text-center mt-5">
+                <h1 class="mt-5 mb-3">شركة الزين للمقاولات والاستشارات الهندسية</h1>
+                <h2 class="mt-3 mb-3">بيئـة هندسية متكاملة مـن التصميم حتى التسلـيم</h2>
+                <p>شركة الزين للإستشارات الهندسية شركة يمنيه بخبره اكثر من 20 عام في مجال الإستشارات الهندسية والاعمال الميكانيكه معا نبني مستقبل غداََ شركة الزين للإستشارات الهندسية شركة يمنيه بخبره اكثر من 20 عام في مجال الإستشارات الهندسية والاعمال الميكانيكه معا نبني مستقبل غدأ.</p>
+                <a href="layouts/contact.html" type="button" class="btn btn-light mt-5 mb-3">لطلب خدمة</a>
+                </div>
+            </div>
+            
+            </section>
+
+            <!-- <hr class="my-5"/> -->
+
+            <!-- Branches Section -->
+            <section class="branches text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card text-bg-light mb-3 p-4" style="">
+                            <div class="card-title mt-2 mb-2">
+                            <h3 class="elementor-icon-box-title">
+                                <span>
+                                    <span style="color: rgb(173, 146, 113); font-family: &quot;GSS Two Medium&quot;, sans-serif; font-size: 20px; font-weight: 400; text-align: center; white-space: normal; background-color: rgb(245, 245, 245);">المركز الرئيسي</span>
+                                    <br style="color: rgb(173, 146, 113); font-family: &quot;GSS Two Medium&quot;, sans-serif; font-size: 20px; font-weight: 400; text-align: center; white-space: normal; background-color: rgb(245, 245, 245);">
+                                    صنعاء
+                                </span>
+                            </h3>
+                            <p class="elementor-icon-box-description" style="margin: 0;">شارع حده - خلف بريد حده</p>
+                            </div>
+                            <div class="card-body mt-2 mb-2">
+                            <h5 class="card-title">تواصل معنا:</h5>
+                            <a class="card-text" href="tel:+967773350540">773350540</a>
+                            </div>
+                            <div class="branche-footer mt-2 mb-2">
+                            <a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/+967773350540">
+                                <span class="content-wrapper">
+                                <span class="elementor-button-icon"><i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i></span>
+                                <span class="elementor-button-text">تواصل مع الفرع</span>
+                                </span>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card text-bg-light mb-3 p-4" style="">
+                            <div class="card-title mt-2 mb-2">
+                            <h3 class="elementor-icon-box-title">
+                                <span>صنعاء</span>
+                            </h3>
+                            <p class="elementor-icon-box-description" style="margin: 0;">شارع حده - خلف بريد حده</p>
+                            </div>
+                            <div class="card-body mt-2 mb-2">
+                            <h5 class="card-title">تواصل معنا:</h5>
+                            <a class="card-text" href="tel:+967773350540">773350540</a>
+                            </div>
+                            <div class="branche-footer mt-2 mb-2">
+                            <a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/+967773350540">
+                                <span class="content-wrapper">
+                                <span class="elementor-button-icon"><i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i></span>
+                                <span class="elementor-button-text">تواصل مع الفرع</span>
+                                </span>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card text-bg-light mb-3 p-4" style="">
+                            <div class="card-title mt-2 mb-2">
+                            <h3 class="elementor-icon-box-title">
+                                <span>صنعاء</span>
+                            </h3>
+                            <p class="elementor-icon-box-description" style="margin: 0;">شارع حده - خلف بريد حده</p>
+                            </div>
+                            <div class="card-body mt-2 mb-2">
+                            <h5 class="card-title">تواصل معنا:</h5>
+                            <a class="card-text" href="tel:+967773350540">773350540</a>
+                            </div>
+                            <div class="branche-footer mt-2 mb-2">
+                            <a class="elementor-button elementor-button-link elementor-size-sm" href="https://wa.me/+967773350540">
+                                <span class="content-wrapper">
+                                <span class="elementor-button-icon"><i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i></span>
+                                <span class="elementor-button-text">تواصل مع الفرع</span>
+                                </span>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-warning">لمشاهدة البروفايل</button>
+                </div>
+            </div>
+            </section>
+
+            <!-- <hr class="my-5"/> -->
+
+            <!-- Popular Attractions -->
+            <section class="achievements text-center">
+            <div class="container">
+                <div class="achievements-title mt-2 mb-2">
+                <h2 class="title">20 عاماًً من النجاح والإنجازات</h2>
+                </div>
+                <div class="achievements-heading-title mt-2 mb-2">
+                <h4 class="heading-title"> خدمات هندسية متكاملة من التصميم حتى التسليم</h4>
+                </div>
+        
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 text-center mt-4">
+                <div class="col mb-3">
+                    <div class="card mb-4 rounded-4 shadow-sm p-3" style="">
+                    <div class="mt-2 mb-2">
+                        <i></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="58" viewBox="0 0 52 58" fill="none">
+                        <path d="M31.1895 36.007L30.4822 36.0088L27.8664 37.481C26.7987 38.035 25.6166 38.615 24.4133 38.6367L24.3752 38.6372C23.0213 38.6612 21.0195 38.1897 19.8303 37.5449L17.852 36.041L17.0776 36.0428C11.2871 37.223 6.92809 42.327 6.92809 48.4412V53.7189H41.5258V48.4417C41.5258 42.2626 37.0733 37.1146 31.1895 36.007Z" fill="#FF9C7A"></path>
+                        <path d="M28.6387 32.447L26.6437 33.1793C25.8793 33.4604 25.0785 33.6118 24.2719 33.6504C22.9865 33.7116 21.7138 33.3733 20.5476 32.8311L19.4218 32.2217L17.3865 36.1323L19.8299 37.5447C21.0192 38.1894 23.021 38.661 24.3749 38.6369L24.4129 38.6365C25.6163 38.6147 26.7983 38.0348 27.8661 37.4808L31.1887 36.1178L28.6387 32.447Z" fill="#D94635"></path>
+                        <path d="M11.562 16.2739C9.79735 17.1254 8.90776 19.1236 9.44505 20.949C9.95559 22.6819 11.635 23.8658 13.4904 23.7706L11.7452 16.4566" fill="#FF9C7A"></path>
+                        <path d="M37.1916 16.48C38.6379 16.8536 39.3774 18.82 38.8429 20.8726C38.3083 22.9252 36.1914 24.2863 34.7445 23.9127L37.1916 16.48Z" fill="#FF9C7A"></path>
+                        <path d="M36.9865 9.00183C36.5943 7.76267 35.6879 4.98736 32.9684 2.77791C29.7891 0.164464 26.1768 0.0701554 25.0537 0.0837575C18.0322 -0.629906 14.2309 3.45167 14.2309 3.45167C11.6601 5.25669 13.2973 7.97804 13.2973 7.97804C12.7831 8.42238 12.2685 8.85357 11.7548 9.29791C11.6945 9.44073 11.6088 9.65383 11.5181 9.91636C10.79 12.0197 10.8956 13.9544 11.1069 15.4507H11.0847C11.1346 15.7426 11.189 16.0269 11.2434 16.3099C11.252 16.3588 11.2602 16.4092 11.2688 16.4563C11.3545 16.9519 11.4782 17.5386 11.6582 18.1956C12.7854 22.7618 14.5238 26.0754 15.8269 28.1574C18.5287 32.4734 20.565 33.4478 21.7661 33.8554C22.3614 34.0576 24.6071 34.7178 27.1104 33.8554C28.6025 33.3417 30.3001 32.2285 32.6034 28.3864C33.5442 26.8162 34.7095 24.5805 35.7052 21.67C35.7011 21.7285 35.697 21.7947 35.6929 21.851C36.3186 20.4721 37.1144 18.3175 37.4064 15.5758C37.5818 13.9272 37.8375 11.6901 36.9865 9.00183Z" fill="#FFD5AE"></path>
+                        <path d="M12.8293 17.0967C13.1444 15.3116 13.3104 14.398 13.7479 13.3479C14.0971 12.51 14.4784 11.595 15.3117 10.7276C16.7413 9.24001 18.5454 8.88635 19.3988 8.71904C22.1573 8.17812 24.4438 9.10172 25.1761 9.36605C27.3402 10.1473 27.503 10.8342 29.167 11.3189C31.264 11.9255 33.2794 11.4807 34.7679 10.9421C35.0848 12.2751 35.2857 13.4358 35.4176 14.3544C35.735 16.5689 35.7767 18.2447 35.7849 18.6518C35.8107 19.9373 35.7572 21.0291 35.6929 21.8515C36.3186 20.4727 37.1143 18.3181 37.4063 15.5764C37.5818 13.9278 37.8379 11.6907 36.9869 9.00242C36.5947 7.76326 35.6883 4.98795 32.9688 2.77849C29.7895 0.165053 26.1772 0.0707444 25.0541 0.0843466C18.0322 -0.62977 14.2308 3.4518 14.2308 3.4518C11.66 5.25682 13.2972 7.97817 13.2972 7.97817C12.7831 8.42251 12.2685 8.8537 11.7548 9.29804C11.6945 9.44086 11.6088 9.65397 11.5181 9.91649C10.614 12.5281 10.9953 14.8813 11.2687 16.4564C11.4383 17.4349 11.6169 18.7439 12.2363 20.271C12.3818 18.9602 12.6883 17.8956 12.8293 17.0967Z" fill="#FF9C7A"></path>
+                        <path d="M36.3058 38.886C37.0031 38.7241 37.7304 38.6384 38.4771 38.6384C43.7285 38.6384 47.9855 42.8769 47.9855 48.1056C47.9855 53.3343 43.7285 57.5723 38.4771 57.5723C33.2262 57.5723 28.9692 53.3338 28.9692 48.1051C28.9692 43.6205 32.1009 39.864 36.3058 38.886Z" fill="#239198"></path>
+                        <path d="M38.4774 52.9675C38.2207 52.9675 38.0131 52.7599 38.0131 52.5033V43.1699C38.0131 42.9137 38.2207 42.7056 38.4774 42.7056C38.734 42.7056 38.9416 42.9137 38.9416 43.1699V52.5033C38.9416 52.7599 38.734 52.9675 38.4774 52.9675Z" fill="white"></path>
+                        <path d="M43.164 48.3009H33.7902C33.5336 48.3009 33.326 48.0928 33.326 47.8366C33.326 47.5804 33.5336 47.3723 33.7902 47.3723H43.1635C43.4206 47.3723 43.6278 47.5804 43.6278 47.8366C43.6278 48.0928 43.4206 48.3009 43.164 48.3009Z" fill="white"></path>
+                        <path d="M1.9025 43.8719L0 44.9325L1.9025 45.9925L2.94216 47.9304L3.98273 45.9925L5.88432 44.9325L3.98273 43.8719L2.94216 41.9341L1.9025 43.8719Z" fill="#1A7BBF"></path>
+                        <path d="M48.0173 13.9786L46.1157 15.0387L48.0173 16.0987L49.0579 18.0371L50.098 16.0987L52 15.0387L50.098 13.9786L49.0579 12.0403L48.0173 13.9786Z" fill="#D94635"></path>
+                        </svg>
+                    </div>
+                    <div class="mt-2 mb-2">
+                        <div class="number-percentage">
+                        <span class="counter" data-target="3500"></span>+
+                        </div>
+                        <h3 class="card-title">عميل سعيد</h3>
+                    </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card mb-4 rounded-4 shadow-sm p-3" style="">
+                    <div class="mt-2 mb-2">
+                        <i></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <path d="M14.8627 44.5345C13.4158 45.9815 8.1443 47.5388 5.19257 48.324C4.2687 48.5698 3.42588 47.7265 3.6722 46.8028C4.45894 43.8523 6.01852 38.5839 7.46533 37.1371C9.50797 35.0945 12.8202 35.0898 14.8627 37.1323C16.9101 39.1797 16.9054 42.4919 14.8627 44.5345Z" fill="#FFC536"></path><path d="M14.8639 41.3531C14.1173 42.0997 11.5844 42.8978 9.86273 43.3745C9.10624 43.584 8.41376 42.8911 8.62364 42.1347C9.10114 40.4139 9.90034 37.8826 10.6469 37.136C11.8113 35.9716 13.6995 35.9689 14.8639 37.1333C16.031 38.3004 16.0283 40.1886 14.8639 41.3531Z" fill="#F34624"></path><path d="M20.7616 39.1975L18.251 41.7082C17.826 42.1331 17.1371 42.1331 16.7122 41.7082L10.2921 35.288C9.86721 34.8631 9.86721 34.1742 10.2921 33.7493L12.8028 31.2386L20.7616 39.1975Z" fill="#2C3642"></path><path d="M32.8257 46.0424C29.2748 48.9561 24.3509 51.0052 19.392 51.688C18.3154 51.8363 17.6021 50.6413 18.2246 49.7505C20.8758 45.9569 22.4726 41.7799 22.9546 37.7078L36.3907 27.8323C39.3421 34.1568 39.2251 40.7953 32.8257 46.0424Z" fill="#F34624"></path><path d="M23.868 15.3095L13.9924 28.7456C9.92417 29.2316 5.74448 30.8257 1.9498 33.4761C1.05883 34.0984 -0.135886 33.3848 0.012605 32.3082C0.696429 27.3504 2.74816 22.4293 5.65806 18.8747C10.9051 12.4752 17.5482 12.3628 23.868 15.3095Z" fill="#F34624"></path><path d="M39.0041 30.0036L22.107 40.8579C21.2459 41.411 20.1158 41.2894 19.3922 40.5658L11.4315 32.605C10.7078 31.8814 10.5862 30.7513 11.1393 29.8902L21.9936 12.9932C23.1015 11.2699 24.3786 9.68494 25.7865 8.27705C31.6488 2.41477 39.8544 -0.620991 48.2041 0.106279C50.175 0.277948 51.7268 1.83554 51.8963 3.80663C52.7865 14.156 47.8963 24.2891 39.0041 30.0036Z" fill="#EDEDED"></path><path d="M50.6279 14.8837C51.7656 11.357 52.2225 7.59709 51.8962 3.80586C51.7267 1.83524 50.1754 0.278073 48.2049 0.106395C44.4078 -0.224425 40.6432 0.230733 37.1125 1.36828L50.6279 14.8837Z" fill="#F34624"></path><path d="M39.7596 22.3568C36.959 25.1575 32.4321 25.1575 29.6402 22.3656C26.8395 19.5649 26.8395 15.038 29.6402 12.2374C32.4321 9.44546 36.959 9.44546 39.7596 12.2461C42.5516 15.038 42.5516 19.5649 39.7596 22.3568Z" fill="#2C3642"></path><path d="M35.3667 22.7753C38.3801 22.4112 40.5276 19.6732 40.1635 16.6599C39.7993 13.6465 37.0614 11.499 34.048 11.8631C31.0347 12.2273 28.8871 14.9652 29.2513 17.9786C29.6154 20.9919 32.3534 23.1395 35.3667 22.7753Z" fill="#00AEFF"></path>
+                        </svg>
+                    </div>
+                    <div class="mt-2 mb-2">
+                        <div class="number-percentage">
+                        <span class="counter" data-target="14570"></span>+
+                        </div>
+                        <h3 class="card-title">مشاريع مكتملة</h3>
+                    </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card mb-4 rounded-4 shadow-sm p-3" style="">
+                    <div class="mt-2 mb-2">
+                        <i></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+                        <path d="M38.0377 9.14062H30.4205V1.52344C30.4205 0.67021 29.7503 0 28.897 0H4.57031C2.0412 0 0 2.0413 0 4.57031V47.4296C0 49.9585 2.0412 52 4.57031 52H34.9908C37.5199 52 39.5611 49.9585 39.5611 47.4296V10.6641C39.5611 9.81083 38.8909 9.14062 38.0377 9.14062Z" fill="#598CFB"></path><path d="M39.5611 12.1875H28.8971C28.055 12.1875 27.3737 11.5061 27.3737 10.6641V0H30.6942C31.8903 0 33.0627 0.484961 33.9078 1.33148L38.2311 5.65632C39.0761 6.50436 39.5611 7.67365 39.5611 8.86681V12.1875Z" fill="#366BDF"></path><path d="M50.6519 16.3312C48.9459 14.5945 45.899 14.5945 44.1926 16.3312L42.6387 17.9157L41.5418 18.982C40.9322 19.5609 40.9322 20.5359 41.5418 21.1148L43.705 23.2782L45.8684 25.4414C46.4167 26.0507 47.4529 26.0507 48.0011 25.4414L49.098 24.3751L50.6519 22.7906C52.4495 21.0842 52.4495 18.0374 50.6519 16.3312Z" fill="#598CFB"></path><path d="M33.2842 33.6979L30.1458 30.5595C30.0852 30.4987 30.0242 30.4987 29.9632 30.5595L29.8721 30.6206C29.6891 30.8034 29.5671 31.0167 29.5061 31.23L27.3429 37.7198C27.1294 38.3291 27.3124 38.908 27.7085 39.2737V39.304C28.1351 39.7001 28.7139 39.8524 29.2624 39.6392L35.7523 37.4758C35.9658 37.4148 36.1788 37.293 36.3616 37.1102L36.4226 37.0492C36.4836 36.9883 36.4836 36.9274 36.4226 36.8664C35.4172 35.8307 34.3204 34.7338 33.2842 33.6979Z" fill="white"></path><path d="M28.8973 18.2812H7.61747C5.60684 18.2812 5.60684 15.2344 7.61747 15.2344H28.8973C30.9081 15.2344 30.9081 18.2812 28.8973 18.2812Z" fill="#FFFCEE"></path><path d="M22.8037 24.375H7.61759C5.60696 24.375 5.60696 21.3281 7.61759 21.3281H22.8037C24.8144 21.3281 24.8144 24.375 22.8037 24.375Z" fill="#FFFCEE"></path><path d="M22.8037 30.4687H7.61759C5.60696 30.4687 5.60696 27.4219 7.61759 27.4219H22.8037C24.8144 27.4219 24.8144 30.4687 22.8037 30.4687Z" fill="#FFFCEE"></path><path d="M22.8037 36.5625H7.61759C5.60696 36.5625 5.60696 33.5156 7.61759 33.5156H22.8037C24.8144 33.5156 24.8144 36.5625 22.8037 36.5625Z" fill="#FFFCEE"></path><path d="M28.8975 45.9062H19.7569C17.7462 45.9062 17.7462 42.8594 19.7569 42.8594H28.8975C30.9082 42.8594 30.9082 45.9062 28.8975 45.9062Z" fill="#FFFCEE"></path><path d="M49.0981 24.375L48.0012 25.4413C41.9685 31.4437 43.9791 29.4327 38.5556 34.8562C38.5556 34.917 36.3924 37.0803 36.3619 37.1109C36.1793 37.2937 35.9662 37.4155 35.7527 37.4765L29.5065 31.2304C29.5675 31.0172 29.6895 30.8039 29.8725 30.6211C29.903 30.5906 32.0661 28.4272 32.1272 28.4272C36.0879 24.4663 34.1378 26.4468 41.5419 18.982L42.6082 17.8851L49.0981 24.375Z" fill="#FBC608"></path><path d="M22.8035 36.5625H19.7566V33.5156H22.8035C24.8142 33.5156 24.8142 36.5625 22.8035 36.5625Z" fill="#FFFCEE"></path><path d="M22.8035 30.4687H19.7566V27.4219H22.8035C24.8142 27.4219 24.8142 30.4687 22.8035 30.4687Z" fill="#FFFCEE"></path><path d="M22.8035 24.375H19.7566V21.3281H22.8035C24.8142 21.3281 24.8142 24.375 22.8035 24.375Z" fill="#FFFCEE"></path><path d="M28.8972 45.9062H19.7566V42.8594H28.8972C30.9079 42.8594 30.9079 45.9062 28.8972 45.9062Z" fill="#FFFCEE"></path><path d="M28.8971 18.2812H19.7565V15.2344H28.8971C30.9078 15.2344 30.9078 18.2812 28.8971 18.2812Z" fill="#FFFCEE"></path>
+                        </svg>
+                    </div>
+                    <div class="mt-2 mb-2">
+                        <div class="number-percentage">
+                        <span class="counter" data-target="128"></span>+
+                        </div>
+                        <h3 class="card-title">مشاريع جاري العمل عليها</h3>
+                    </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card mb-4 rounded-4 shadow-sm p-3" style="">
+                    <div class="mt-2 mb-2">
+                        <i></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" fill="none">
+                        <path d="M51.2042 57.6102L43.5032 55.9154L41.1165 63.4503C40.9448 63.9921 40.2111 64.0715 39.9276 63.579L30.4007 47.0294C35.0935 46.0126 39.269 43.6027 42.4751 40.2533L51.9108 56.6464C52.1939 57.1382 51.7584 57.7323 51.2042 57.6102Z" fill="#FD646F"></path>
+                        <path d="M51.2042 57.6104L44.0861 56.0436C43.7559 55.971 43.425 56.1621 43.323 56.4843L41.1165 63.4503C40.9448 63.9921 40.2111 64.0715 39.9276 63.579L31.766 49.4L30.4007 47.0294C35.0935 46.0126 39.269 43.6027 42.4751 40.2533L43.8299 42.6055L51.9109 56.6465C52.1937 57.1385 51.7583 57.7324 51.2042 57.6104Z" fill="#FD646F"></path>
+                        <path d="M51.2041 57.6099L44.0865 56.0435C43.7559 55.9716 43.4254 56.1623 43.3235 56.4837L44.0896 54.1031C44.1929 53.782 44.5239 53.5924 44.8532 53.6656L50.9781 55.027L51.9109 56.647C52.1944 57.1383 51.758 57.7327 51.2041 57.6099Z" fill="#FC4755"></path>
+                        <path d="M21.7496 46.8311L12.0721 63.6396C11.7886 64.1321 11.0549 64.0527 10.8832 63.5109L8.67659 56.5448C8.57456 56.2226 8.2435 56.0315 7.91349 56.1041L0.795464 57.6707C0.241261 57.7927 -0.194185 57.1987 0.0889264 56.7069L9.08957 41.0698C12.4498 44.2555 16.9823 46.0462 21.7496 46.8311Z" fill="#FD646F"></path>
+                        <path d="M10.3631 43.3958L2.3427 57.3294L0.795579 57.6703C0.241375 57.7924 -0.194201 57.1984 0.0889107 56.7065L7.75029 43.3958L9.82209 39.7871C10.38 40.3152 10.9626 40.8171 11.5701 41.2889L10.3631 43.3958Z" fill="#FC4755"></path>
+                        <path d="M13.0158 61.9981L12.0712 63.639C11.7877 64.1316 11.0548 64.0532 10.8823 63.511L8.6757 56.5449C8.57379 56.2222 8.24326 56.0315 7.91272 56.1033L10.3532 55.5665C10.6832 55.4939 11.0141 55.685 11.1162 56.0071L13.0158 61.9981Z" fill="#FC4755"></path>
+                        <path d="M9.30667 40.6722L15.6716 43.5425L21.7489 46.8313L20.1194 49.6598C15.5755 48.7373 11.3595 46.6223 7.87518 43.5074C7.83337 43.4707 7.79156 43.434 7.74976 43.396L9.30667 40.6722Z" fill="#FC4755"></path>
+                        <path d="M43.8294 42.6055L42.4746 40.2533L35.3055 43.4176L30.4002 47.0294L30.9515 47.9867L32.3054 50.338L39.9271 63.5788C40.2106 64.0714 40.9443 63.9919 41.116 63.4501L41.6013 61.9179L34.0258 48.7225C37.6932 47.4463 41.0317 45.3701 43.8294 42.6055Z" fill="#FC4755"></path>
+                        <path d="M49.7114 23.7827C49.7114 30.1748 47.1964 35.98 43.1033 40.2533C39.8972 43.6027 35.7217 46.0126 31.0289 47.0294C29.4076 47.3806 27.7262 47.5653 26.0003 47.5653C24.6834 47.5653 23.3926 47.4578 22.1345 47.2509C17.6115 46.5066 13.5183 44.478 10.2417 41.5506C10.064 41.3933 9.89027 41.2335 9.71782 41.0697C9.10639 40.4905 8.52632 39.8785 7.9776 39.2378C7.4524 38.6219 6.95856 37.9785 6.49737 37.3102C5.11252 35.3066 4.02685 33.0775 3.30437 30.69C2.6446 28.5042 2.28925 26.186 2.28925 23.7828C2.28925 10.6484 12.9056 0 26.0003 0C28.3951 0 30.7075 0.356404 32.8854 1.01957C35.2671 1.74165 37.4881 2.83059 39.487 4.22093C40.1533 4.68355 40.7947 5.17883 41.4075 5.70691C42.2279 6.40927 42.9987 7.16806 43.716 7.9752C47.446 12.1777 49.7114 17.7154 49.7114 23.7827Z" fill="#FAA515"></path>
+                        <path d="M25.9997 40.817C35.3792 40.817 42.9828 33.1905 42.9828 23.7827C42.9828 14.3748 35.3792 6.74829 25.9997 6.74829C16.6203 6.74829 9.01672 14.3748 9.01672 23.7827C9.01672 33.1905 16.6203 40.817 25.9997 40.817Z" fill="#FAD207"></path>
+                        <path d="M42.9827 23.7823C42.9827 33.1898 35.3791 40.8164 26 40.8164C16.6208 40.8164 9.01721 33.1898 9.01721 23.7823C9.01721 23.072 9.06032 22.3722 9.14525 21.6857C10.1747 30.1051 17.329 36.623 26 36.623C34.671 36.623 41.8252 30.1051 42.8547 21.6857C42.9396 22.3723 42.9827 23.0721 42.9827 23.7823Z" fill="#FAA515"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26 6.74878C16.6208 6.74878 9.01721 14.3754 9.01721 23.7829C9.01721 33.1904 16.6208 40.817 26 40.817C35.3791 40.817 42.9827 33.1904 42.9827 23.7829C42.9827 14.3754 35.3791 6.74878 26 6.74878ZM26 38.8513C17.7157 38.8513 10.9769 32.0921 10.9769 23.7829C10.9769 15.4736 17.7157 8.71449 26 8.71449C34.2843 8.71449 41.023 15.4736 41.023 23.7829C41.023 32.0921 34.2843 38.8513 26 38.8513Z" fill="#FAF063"></path>
+                        <path d="M26.5865 14.3629L28.9194 19.1285C29.0144 19.3226 29.1993 19.4572 29.4133 19.4879L34.6563 20.2412C35.1928 20.3183 35.4075 20.9777 35.0191 21.3558L31.2163 25.0587C31.0619 25.2091 30.9916 25.4258 31.0283 25.6381L31.9345 30.8738C32.0271 31.4086 31.4647 31.8165 30.985 31.5624L26.3056 29.0827C26.1143 28.9813 25.8852 28.9813 25.6939 29.0827L21.0145 31.5624C20.5348 31.8166 19.9724 31.4088 20.065 30.8738L20.9712 25.6381C21.0079 25.4258 20.9376 25.2091 20.7832 25.0587L16.9804 21.3558C16.592 20.9775 16.8067 20.3183 17.3432 20.2412L22.5862 19.4879C22.8001 19.4572 22.9849 19.3226 23.0801 19.1285L25.413 14.3629C25.652 13.8748 26.3475 13.8748 26.5865 14.3629Z" fill="#FAA515"></path>
+                        </svg>
+                    </div>
+                    <div class="mt-2 mb-2">
+                        <div class="number-percentage">
+                        <span class="counter" data-target="20"></span>+
+                        </div>
+                        <h3 class="card-title">سنوات الخبرة</h3>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- <hr class="my-5"/> -->
+
+            <section class="services">
+                <div class="container">
+                    <div class="services-title mt-2 mb-2 text-center">
+                        <h2 class="title">خدماتنا</h2>
+                        <div class="services-heading-title mt-2 mb-2">
+                            <p class="heading-title">نحن في الزين للإستشارات الهندسية نقدم خدمات هندسية متكاملة من التصميم حتى التسليم</p>
+                        </div>
+                    </div>
+                    <div class="row slideanim">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="card" style="">
+                                <div class="c-heading text-center">
+                                    <img src="assets/storage/department/1_prototype.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">التصاميم والمخططات الهندسية</h3>
+                                    <p class="card-text" style="">يتخصص مهندسون في تقديم خدمات التصميم بكافه مراحله بدءا من اعداد التصاميم الاوليه وانتهاء بالمخططات التنفيذيه.</p>
+                                </div>
+                                <div class="c-footer text-center">
+                                    <a href="layouts/services2.html?do=services2&id=1" class="btn btn-info">للمزيد من التفاصيل</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="card" style="">
+                                <div class="c-heading text-center">
+                                    <img src="assets/storage/department/2_architecture.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">الاشراف وإدارة المشاريع</h3>
+                                    <p class="card-text" style="">نضم في شركتنا العديد من الكوادر الفنية ذت الخبرات العالية في الإشراف على تنفيذ المشاريع.</p>
+                                </div>
+                                <div class="c-footer text-center">
+                                    <a href="layouts/services2.html?do=services2&id=2" class="btn btn-info">للمزيد من التفاصيل</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="card" style="">
+                                <div class="c-heading text-center">
+                                    <img src="assets/storage/department/3_engineer.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">الدعم الفني والخدمات الإستشارية</h3>
+                                    <p class="card-text" style="">تقدم حلولاً تقنية متخصصة وتوجيهات لضمان تنفيذ المشاريع بكفاءة وفق المعايير الهندسية المطلوبة.</p>
+                                </div>
+                                <div class="c-footer text-center">
+                                    <a href="layouts/services2.html?do=services2&id=3" class="btn btn-info">للمزيد من التفاصيل</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="card" style="">
+                                <div class="c-heading text-center">
+                                    <img src="assets/storage/department/4_construction-safety.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">السلامة الهندسية</h3>
+                                    <p class="card-text" style="">أحد أهم الأقسام بشركة الزين للإستشارات الهندسية والذى احتل مكانة مرموقة جعلته في مقدمة الشركات.</p>
+                                </div>
+                                <div class="c-footer text-center">
+                                    <a href="layouts/services2.html?do=services2&id=4" class="btn btn-info">للمزيد من التفاصيل</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="card" style="">
+                                <div class="c-heading text-center">
+                                    <img src="assets/storage/department/5_crossing.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">السلامة المرورية</h3>
+                                    <p class="card-text" style="">نضم في شركتنا العديد من الكوادر الفنية ذت الخبرات العالية في السلامة المرورية</p>
+                                </div>
+                                <div class="c-footer text-center">
+                                    <a href="layouts/services2.html?do=services2&id=5" class="btn btn-info">للمزيد من التفاصيل</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="card" style="">
+                                <div class="c-heading text-center">
+                                    <img src="assets/storage/department/6_construction.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">الأعمال المساحية</h3>
+                                    <p class="card-text" style="">نقدم خدمات مساحية متكاملة تشمل: رفع مساحي - رفع معماري -تحديث الصكوك - نقل الملكيه - التجزئة والفرز.</p>
+                                </div>
+                                <div class="c-footer text-center">
+                                    <a href="layouts/services2.html?do=services2&id=6" class="btn btn-info">للمزيد من التفاصيل</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <br class="my-5"/>
+            <br class="my-5"/>
+            <br class="my-5"/>
+
+            <section class="samples text-center">
+                <div class="container">
+                    <div class="mb-5">
+                        <h2 class="elementor-heading-title elementor-size-default">نحول احلامك الي واقع</h2>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <div class="card-img" style="border-radius: 0 !important; height: 480px; background-image: url('assets/storage/projects/latest3Projects_1.jpg');"></div>
+                                    <div class="img-overlay">
+                                        <h3 class="card-title">
+                                            <span>نماذج من اعمالنا</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <div class="card-img" style="border-radius: 0 !important; height: 480px; background-image: url('assets/storage/projects/latest3Projects_2.png');"></div>
+                                    <div class="img-overlay">
+                                        <h3 class="card-title">
+                                            <span>نماذج من اعمالنا</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <div class="card-img" style="border-radius: 0 !important; height: 480px; background-image: url('assets/storage/projects/latest3Projects_3.jpg');"></div>
+                                    <div class="img-overlay">
+                                        <h3 class="card-title">
+                                            <span>نماذج من اعمالنا</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <hr class="my-5"/> -->
+
+            <section class="portfolio text-center">
+                <div class="">
+                    <div class="title mt-2 mb-2">
+                        <button type="button" class="btn btn-info">معرض اعمالنا</button>
+                    </div>
+                    <div class="row mt-2 mb-2">
+                        <div class="col-lg-3 col-md-6" style="padding: 0;">
+                            <div class="card">
+                                <div class="card-img" style="border-radius: 0 !important; height: 480px; background-image: url('assets/storage/projects/latest3Projects_1.jpg');"></div>
+                                <div class="img-overlay">
+                                    <h4 class="card-title" >
+                                        <span>مشروع فيلا</span>
+                                    </h4>
+                                    <p class="">الموقع</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6" style="padding: 0;">
+                            <div class="card">
+                                <div class="card-img" style="border-radius: 0 !important; height: 480px; background-image: url('assets/storage/projects/latest3Projects_2.png');"></div>
+                                <div class="img-overlay">
+                                    <h4 class="card-title" >
+                                        <span>مشاريع سابقة</span>
+                                    </h4>
+                                    <p class="">الموقع</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6" style="padding: 0;">
+                            <div class="card">
+                                <div class="card-img" style="border-radius: 0 !important; height: 480px; background-image: url('assets/storage/projects/latest3Projects_3.jpg');"></div>
+                                <div class="img-overlay">
+                                    <h4 class="card-title" >
+                                        <span>مشاريع سابقة</span>
+                                    </h4>
+                                    <p class="">الموقع</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6" style="padding: 0;">
+                            <div class="card">
+                                <div class="card-img" style="border-radius: 0 !important; height: 480px; background-image: url('assets/storage/projects/latest3Projects_4.jpg');"></div>
+                                <div class="img-overlay">
+                                    <h4 class="card-title" >
+                                        <span>مشروع سكني</span>
+                                    </h4>
+                                    <p class="">الموقع</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <hr class="my-5"/> -->
+
+            <section class="projects text-center">
+                <div class="">
+                    <div class="title mt-2 mb-2">
+                        <h3 class="ekit-heading--title elementskit-section-title ">بعض من مشاريع  شركة الزين للإستشارات الهندسية</h3>
+                    </div>
+                    <div class="row mt-2 mb-2">
+                        <div class="design-col col-md-3" style="padding: 0.2rem !important;">
+                            <div class="card">
+                                <div class="card-img" style="border-radius: 0 !important; height: 480px; background-image: url('assets/storage/projects/latest3Projects_1.jpg');"></div>
+                                <div class="img-overlay">
+                                    <h4 class="card-title" ><span>مشاريع سكنيه</span></h4> 
+                                    <button type="button" class="requst-serv-btn btn btn-outline-light">شاهد المزيد</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="design-col col-md-3" style="padding: 0.2rem !important;">
+                            <div class="card">
+                                <div class="card-img" style="border-radius: 0 !important; height: 480px; background-image: url('assets/storage/projects/latest3Projects_2.png');"></div>
+                                <div class="img-overlay">
+                                    <h4 class="card-title" ><span>مشاريع المدارس</span></h4> 
+                                    <button type="button" class="requst-serv-btn btn btn-outline-light">شاهد المزيد</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="design-col col-md-3" style="padding: 0.2rem !important;">
+                            <div class="card">
+                                <div class="card-img" style="border-radius: 0 !important; height: 480px; background-image: url('assets/storage/projects/latest3Projects_3.jpg');"></div>
+                                <div class="img-overlay">
+                                    <h4 class="card-title" ><span>مشاريع تجارية</span></h4> 
+                                    <button type="button" class="requst-serv-btn btn btn-outline-light">شاهد المزيد</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="design-col col-md-3" style="padding: 0.2rem !important;">
+                            <div class="card">
+                                <div class="card-img" style="border-radius: 0 !important; height: 480px; background-image: url('assets/storage/projects/latest3Projects_4.jpg');"></div>
+                                <div class="img-overlay">
+                                    <h4 class="card-title" ><span>فيلا سكنيه</span></h4> 
+                                    <button type="button" class="requst-serv-btn btn btn-outline-light">شاهد المزيد</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <hr class="my-5"/> -->
+
+            <section class="contact section text-center">
+                <div class="contact-con">
+                    <div class="ekit-heading mt-2 mb-2">
+                        <h2 class="title ">لا تترد في التواصل معنا</h2>
+                        <div class="border-div">
+                            <div class="border-divider"></div>
+                        </div>
+                        <div class="sub-title mt-2 mb-2">
+                            <p>متواجدون على مدار الساعة ونقدم استشارات مجانية  اتصل بنا الان</p>
+                        </div>
+                    </div>
+                    <div class="contact-img" style="background-image: url('assets/images/contact_img.jpg');">
+                        <div class="container">
+                            <div class="img-overlay">
+                                <div>
+                                    <h3 class="ekit-heading--title elementskit-section-title ">يمكنك طلب خدماتنا من خلال الموقع</h3>
+                                    <div class="mt-2 mb-2">
+                                        <p>يمكنك طلب جميع خدماتنا من خلال الموقع وسوف نتواصل معك في الحال</p>
+                                    </div>
+                                </div>
+                                <div class="mt-2 mb-2">
+                                    <a type="button" class="btn btn-outline-light">اطلب خدماتنا</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script defer src="js/script.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+</body>
+</html>

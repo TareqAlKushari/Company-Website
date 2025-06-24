@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="facebook" viewBox="0 0 16 16">
+      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+    </symbol>
+  </svg>
+  <header class="site-header text-center" style="z-index: 2000;">
+    <nav class="navbar navbar-default navbar-expand-lg navbar-dark d-none d-lg-block navbar-fixed-top" id="myTopnav" style="z-index: 2000;">
+      <div class="container">
+        <div class="logo text-center">
+          <img src="assets/images/logo.jpeg" class="text-center" alt="...">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="layouts/services.html" role="button" aria-expanded="false">الخدمات</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{{route('pages.services2', $dep->id )}}">{{$dep->name}}</a></li>
+                <li><a class="dropdown-item" href="{{route('pages.services2', $dep->id )}}">{{$dep->name}}</a></li>
+                <li><a class="dropdown-item" href="{{route('pages.services2', $dep->id )}}">{{$dep->name}}</a></li>
+                <li><a class="dropdown-item" href="{{route('pages.services2', $dep->id )}}">{{$dep->name}}</a></li>
+                <li><a class="dropdown-item" href="{{route('pages.services2', $dep->id )}}">{{$dep->name}}</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layouts/about.html">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layouts/profile.html">بروفايل الشركة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layouts/contact.html">تواصل معنا</a>
+            </li>
+          </ul>
+           <!-- <ul class="nav justify-content-end">
+            <li class="">
+              <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/MDBootstrap" rel="nofollow" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul> -->
+          <div>
+            <a href="layouts/contact.html" type="button" class="btn btn-light">اطلب خدمة</a>
+          </div>
+        </div>
+        <div>
+          <ul class="nav justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <section>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+        
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+        
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+    </section>
+    {{-- @dd(Str::contains($department->name, 'التصاميم') && ($department->id === 1)) --}}
+    @if (Str::contains($department->name, 'التصاميم') && ($department->id === 1))
+        <main class="design-page">
+            <div class="container site-content">
+                <section class="section" style="height: 280px;">
+                    <div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ asset("images/slide1.png") }}');">
+                    </div>
+                </section>
+        
+                <section class="section achievements text-center">
+                    <div class="container">
+                        <div class="title mt-5">
+                            <h2 class="mb-3">قسم {{ $department->name }}</h2>
+                            <div class="border-divider"></div>
+                            <div class="heading-title">
+                                <p>نسعى دائما لتطوير وتأهيل الكادر الهندسي ودعمه بالخبرات اللازمة لتحقيق اعلى جودة ونقدم لعملاؤنا أفضل الحلول الهندسية المبتكرة مع الحفاظ على أعلى معايير الجودة.</p>
+                            </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-center mt-4">
+                            <div class="col mb-3">
+                              <div class="card mb-4 rounded-4 shadow-sm p-4" style="">
+                                <div class="mt-2 mb-2">
+                                  <i></i>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 52 58" fill="none">
+                                    <path d="M31.1895 36.007L30.4822 36.0088L27.8664 37.481C26.7987 38.035 25.6166 38.615 24.4133 38.6367L24.3752 38.6372C23.0213 38.6612 21.0195 38.1897 19.8303 37.5449L17.852 36.041L17.0776 36.0428C11.2871 37.223 6.92809 42.327 6.92809 48.4412V53.7189H41.5258V48.4417C41.5258 42.2626 37.0733 37.1146 31.1895 36.007Z" fill="#FF9C7A"></path>
+                                    <path d="M28.6387 32.447L26.6437 33.1793C25.8793 33.4604 25.0785 33.6118 24.2719 33.6504C22.9865 33.7116 21.7138 33.3733 20.5476 32.8311L19.4218 32.2217L17.3865 36.1323L19.8299 37.5447C21.0192 38.1894 23.021 38.661 24.3749 38.6369L24.4129 38.6365C25.6163 38.6147 26.7983 38.0348 27.8661 37.4808L31.1887 36.1178L28.6387 32.447Z" fill="#D94635"></path>
+                                    <path d="M11.562 16.2739C9.79735 17.1254 8.90776 19.1236 9.44505 20.949C9.95559 22.6819 11.635 23.8658 13.4904 23.7706L11.7452 16.4566" fill="#FF9C7A"></path>
+                                    <path d="M37.1916 16.48C38.6379 16.8536 39.3774 18.82 38.8429 20.8726C38.3083 22.9252 36.1914 24.2863 34.7445 23.9127L37.1916 16.48Z" fill="#FF9C7A"></path>
+                                    <path d="M36.9865 9.00183C36.5943 7.76267 35.6879 4.98736 32.9684 2.77791C29.7891 0.164464 26.1768 0.0701554 25.0537 0.0837575C18.0322 -0.629906 14.2309 3.45167 14.2309 3.45167C11.6601 5.25669 13.2973 7.97804 13.2973 7.97804C12.7831 8.42238 12.2685 8.85357 11.7548 9.29791C11.6945 9.44073 11.6088 9.65383 11.5181 9.91636C10.79 12.0197 10.8956 13.9544 11.1069 15.4507H11.0847C11.1346 15.7426 11.189 16.0269 11.2434 16.3099C11.252 16.3588 11.2602 16.4092 11.2688 16.4563C11.3545 16.9519 11.4782 17.5386 11.6582 18.1956C12.7854 22.7618 14.5238 26.0754 15.8269 28.1574C18.5287 32.4734 20.565 33.4478 21.7661 33.8554C22.3614 34.0576 24.6071 34.7178 27.1104 33.8554C28.6025 33.3417 30.3001 32.2285 32.6034 28.3864C33.5442 26.8162 34.7095 24.5805 35.7052 21.67C35.7011 21.7285 35.697 21.7947 35.6929 21.851C36.3186 20.4721 37.1144 18.3175 37.4064 15.5758C37.5818 13.9272 37.8375 11.6901 36.9865 9.00183Z" fill="#FFD5AE"></path>
+                                    <path d="M12.8293 17.0967C13.1444 15.3116 13.3104 14.398 13.7479 13.3479C14.0971 12.51 14.4784 11.595 15.3117 10.7276C16.7413 9.24001 18.5454 8.88635 19.3988 8.71904C22.1573 8.17812 24.4438 9.10172 25.1761 9.36605C27.3402 10.1473 27.503 10.8342 29.167 11.3189C31.264 11.9255 33.2794 11.4807 34.7679 10.9421C35.0848 12.2751 35.2857 13.4358 35.4176 14.3544C35.735 16.5689 35.7767 18.2447 35.7849 18.6518C35.8107 19.9373 35.7572 21.0291 35.6929 21.8515C36.3186 20.4727 37.1143 18.3181 37.4063 15.5764C37.5818 13.9278 37.8379 11.6907 36.9869 9.00242C36.5947 7.76326 35.6883 4.98795 32.9688 2.77849C29.7895 0.165053 26.1772 0.0707444 25.0541 0.0843466C18.0322 -0.62977 14.2308 3.4518 14.2308 3.4518C11.66 5.25682 13.2972 7.97817 13.2972 7.97817C12.7831 8.42251 12.2685 8.8537 11.7548 9.29804C11.6945 9.44086 11.6088 9.65397 11.5181 9.91649C10.614 12.5281 10.9953 14.8813 11.2687 16.4564C11.4383 17.4349 11.6169 18.7439 12.2363 20.271C12.3818 18.9602 12.6883 17.8956 12.8293 17.0967Z" fill="#FF9C7A"></path>
+                                    <path d="M36.3058 38.886C37.0031 38.7241 37.7304 38.6384 38.4771 38.6384C43.7285 38.6384 47.9855 42.8769 47.9855 48.1056C47.9855 53.3343 43.7285 57.5723 38.4771 57.5723C33.2262 57.5723 28.9692 53.3338 28.9692 48.1051C28.9692 43.6205 32.1009 39.864 36.3058 38.886Z" fill="#239198"></path>
+                                    <path d="M38.4774 52.9675C38.2207 52.9675 38.0131 52.7599 38.0131 52.5033V43.1699C38.0131 42.9137 38.2207 42.7056 38.4774 42.7056C38.734 42.7056 38.9416 42.9137 38.9416 43.1699V52.5033C38.9416 52.7599 38.734 52.9675 38.4774 52.9675Z" fill="white"></path>
+                                    <path d="M43.164 48.3009H33.7902C33.5336 48.3009 33.326 48.0928 33.326 47.8366C33.326 47.5804 33.5336 47.3723 33.7902 47.3723H43.1635C43.4206 47.3723 43.6278 47.5804 43.6278 47.8366C43.6278 48.0928 43.4206 48.3009 43.164 48.3009Z" fill="white"></path>
+                                    <path d="M1.9025 43.8719L0 44.9325L1.9025 45.9925L2.94216 47.9304L3.98273 45.9925L5.88432 44.9325L3.98273 43.8719L2.94216 41.9341L1.9025 43.8719Z" fill="#1A7BBF"></path>
+                                    <path d="M48.0173 13.9786L46.1157 15.0387L48.0173 16.0987L49.0579 18.0371L50.098 16.0987L52 15.0387L50.098 13.9786L49.0579 12.0403L48.0173 13.9786Z" fill="#D94635"></path>
+                                  </svg>
+                                </div>
+                                <div class="mt-2 mb-2">
+                                  <div class="number-percentage">
+                                    <span class="counter2" data-target="{{ $servicesClientsCount }}"></span>+
+                                  </div>
+                                  <h3 class="card-title">عميل سعيد</h3>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col mb-3">
+                              <div class="card mb-4 rounded-4 shadow-sm p-4" style="">
+                                <div class="mt-2 mb-2">
+                                  <i></i>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 52 52" fill="none">
+                                    <path d="M14.8627 44.5345C13.4158 45.9815 8.1443 47.5388 5.19257 48.324C4.2687 48.5698 3.42588 47.7265 3.6722 46.8028C4.45894 43.8523 6.01852 38.5839 7.46533 37.1371C9.50797 35.0945 12.8202 35.0898 14.8627 37.1323C16.9101 39.1797 16.9054 42.4919 14.8627 44.5345Z" fill="#FFC536"></path><path d="M14.8639 41.3531C14.1173 42.0997 11.5844 42.8978 9.86273 43.3745C9.10624 43.584 8.41376 42.8911 8.62364 42.1347C9.10114 40.4139 9.90034 37.8826 10.6469 37.136C11.8113 35.9716 13.6995 35.9689 14.8639 37.1333C16.031 38.3004 16.0283 40.1886 14.8639 41.3531Z" fill="#F34624"></path><path d="M20.7616 39.1975L18.251 41.7082C17.826 42.1331 17.1371 42.1331 16.7122 41.7082L10.2921 35.288C9.86721 34.8631 9.86721 34.1742 10.2921 33.7493L12.8028 31.2386L20.7616 39.1975Z" fill="#2C3642"></path><path d="M32.8257 46.0424C29.2748 48.9561 24.3509 51.0052 19.392 51.688C18.3154 51.8363 17.6021 50.6413 18.2246 49.7505C20.8758 45.9569 22.4726 41.7799 22.9546 37.7078L36.3907 27.8323C39.3421 34.1568 39.2251 40.7953 32.8257 46.0424Z" fill="#F34624"></path><path d="M23.868 15.3095L13.9924 28.7456C9.92417 29.2316 5.74448 30.8257 1.9498 33.4761C1.05883 34.0984 -0.135886 33.3848 0.012605 32.3082C0.696429 27.3504 2.74816 22.4293 5.65806 18.8747C10.9051 12.4752 17.5482 12.3628 23.868 15.3095Z" fill="#F34624"></path><path d="M39.0041 30.0036L22.107 40.8579C21.2459 41.411 20.1158 41.2894 19.3922 40.5658L11.4315 32.605C10.7078 31.8814 10.5862 30.7513 11.1393 29.8902L21.9936 12.9932C23.1015 11.2699 24.3786 9.68494 25.7865 8.27705C31.6488 2.41477 39.8544 -0.620991 48.2041 0.106279C50.175 0.277948 51.7268 1.83554 51.8963 3.80663C52.7865 14.156 47.8963 24.2891 39.0041 30.0036Z" fill="#EDEDED"></path><path d="M50.6279 14.8837C51.7656 11.357 52.2225 7.59709 51.8962 3.80586C51.7267 1.83524 50.1754 0.278073 48.2049 0.106395C44.4078 -0.224425 40.6432 0.230733 37.1125 1.36828L50.6279 14.8837Z" fill="#F34624"></path><path d="M39.7596 22.3568C36.959 25.1575 32.4321 25.1575 29.6402 22.3656C26.8395 19.5649 26.8395 15.038 29.6402 12.2374C32.4321 9.44546 36.959 9.44546 39.7596 12.2461C42.5516 15.038 42.5516 19.5649 39.7596 22.3568Z" fill="#2C3642"></path><path d="M35.3667 22.7753C38.3801 22.4112 40.5276 19.6732 40.1635 16.6599C39.7993 13.6465 37.0614 11.499 34.048 11.8631C31.0347 12.2273 28.8871 14.9652 29.2513 17.9786C29.6154 20.9919 32.3534 23.1395 35.3667 22.7753Z" fill="#00AEFF"></path>
+                                  </svg>
+                                </div>
+                                <div class="mt-2 mb-2">
+                                  <div class="number-percentage">
+                                    <span class="counter2" data-target="{{ $servicesCompletedProjectsCount }}"></span>+
+                                  </div>
+                                  <h3 class="card-title">مشاريع مكتملة</h3>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col mb-3">
+                              <div class="card mb-4 rounded-4 shadow-sm p-4" style="">
+                                <div class="mt-2 mb-2">
+                                  <i></i>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 52 52" fill="none">
+                                    <path d="M38.0377 9.14062H30.4205V1.52344C30.4205 0.67021 29.7503 0 28.897 0H4.57031C2.0412 0 0 2.0413 0 4.57031V47.4296C0 49.9585 2.0412 52 4.57031 52H34.9908C37.5199 52 39.5611 49.9585 39.5611 47.4296V10.6641C39.5611 9.81083 38.8909 9.14062 38.0377 9.14062Z" fill="#598CFB"></path><path d="M39.5611 12.1875H28.8971C28.055 12.1875 27.3737 11.5061 27.3737 10.6641V0H30.6942C31.8903 0 33.0627 0.484961 33.9078 1.33148L38.2311 5.65632C39.0761 6.50436 39.5611 7.67365 39.5611 8.86681V12.1875Z" fill="#366BDF"></path><path d="M50.6519 16.3312C48.9459 14.5945 45.899 14.5945 44.1926 16.3312L42.6387 17.9157L41.5418 18.982C40.9322 19.5609 40.9322 20.5359 41.5418 21.1148L43.705 23.2782L45.8684 25.4414C46.4167 26.0507 47.4529 26.0507 48.0011 25.4414L49.098 24.3751L50.6519 22.7906C52.4495 21.0842 52.4495 18.0374 50.6519 16.3312Z" fill="#598CFB"></path><path d="M33.2842 33.6979L30.1458 30.5595C30.0852 30.4987 30.0242 30.4987 29.9632 30.5595L29.8721 30.6206C29.6891 30.8034 29.5671 31.0167 29.5061 31.23L27.3429 37.7198C27.1294 38.3291 27.3124 38.908 27.7085 39.2737V39.304C28.1351 39.7001 28.7139 39.8524 29.2624 39.6392L35.7523 37.4758C35.9658 37.4148 36.1788 37.293 36.3616 37.1102L36.4226 37.0492C36.4836 36.9883 36.4836 36.9274 36.4226 36.8664C35.4172 35.8307 34.3204 34.7338 33.2842 33.6979Z" fill="white"></path><path d="M28.8973 18.2812H7.61747C5.60684 18.2812 5.60684 15.2344 7.61747 15.2344H28.8973C30.9081 15.2344 30.9081 18.2812 28.8973 18.2812Z" fill="#FFFCEE"></path><path d="M22.8037 24.375H7.61759C5.60696 24.375 5.60696 21.3281 7.61759 21.3281H22.8037C24.8144 21.3281 24.8144 24.375 22.8037 24.375Z" fill="#FFFCEE"></path><path d="M22.8037 30.4687H7.61759C5.60696 30.4687 5.60696 27.4219 7.61759 27.4219H22.8037C24.8144 27.4219 24.8144 30.4687 22.8037 30.4687Z" fill="#FFFCEE"></path><path d="M22.8037 36.5625H7.61759C5.60696 36.5625 5.60696 33.5156 7.61759 33.5156H22.8037C24.8144 33.5156 24.8144 36.5625 22.8037 36.5625Z" fill="#FFFCEE"></path><path d="M28.8975 45.9062H19.7569C17.7462 45.9062 17.7462 42.8594 19.7569 42.8594H28.8975C30.9082 42.8594 30.9082 45.9062 28.8975 45.9062Z" fill="#FFFCEE"></path><path d="M49.0981 24.375L48.0012 25.4413C41.9685 31.4437 43.9791 29.4327 38.5556 34.8562C38.5556 34.917 36.3924 37.0803 36.3619 37.1109C36.1793 37.2937 35.9662 37.4155 35.7527 37.4765L29.5065 31.2304C29.5675 31.0172 29.6895 30.8039 29.8725 30.6211C29.903 30.5906 32.0661 28.4272 32.1272 28.4272C36.0879 24.4663 34.1378 26.4468 41.5419 18.982L42.6082 17.8851L49.0981 24.375Z" fill="#FBC608"></path><path d="M22.8035 36.5625H19.7566V33.5156H22.8035C24.8142 33.5156 24.8142 36.5625 22.8035 36.5625Z" fill="#FFFCEE"></path><path d="M22.8035 30.4687H19.7566V27.4219H22.8035C24.8142 27.4219 24.8142 30.4687 22.8035 30.4687Z" fill="#FFFCEE"></path><path d="M22.8035 24.375H19.7566V21.3281H22.8035C24.8142 21.3281 24.8142 24.375 22.8035 24.375Z" fill="#FFFCEE"></path><path d="M28.8972 45.9062H19.7566V42.8594H28.8972C30.9079 42.8594 30.9079 45.9062 28.8972 45.9062Z" fill="#FFFCEE"></path><path d="M28.8971 18.2812H19.7565V15.2344H28.8971C30.9078 15.2344 30.9078 18.2812 28.8971 18.2812Z" fill="#FFFCEE"></path>
+                                  </svg>
+                                </div>
+                                <div class="mt-2 mb-2">
+                                  <div class="number-percentage">
+                                    <span class="counter2" data-target="{{ $servicesProjectsInProgressCount }}"></span>+
+                                  </div>
+                                  <h3 class="card-title">مشاريع جاري العمل عليها</h3>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="services section text-center">
+                    <div class="container">
+                        <div class="title text-center mt-5">
+                            <h2 class="mb-3">ماذا نقدم لك ؟​</h2>
+                            <div class="border-divider"></div>
+                            <div class="heading-title">
+                                <h3>خدماتنا في مجال {{ $department->name }}</h3>
+                            </div>
+                        </div>
+                        <div class="row slideanim pt-5">
+                            @foreach ($services as $service)
+                                <div class="col-sm-3 col-card mb-3">
+                                    <div class="card" style="">
+                                        <div class="text-center align-self-center" style="">
+                                            <div class="info-box-icon text-center">
+                                                @foreach ($service->images as $image)
+                                                    <img src="{{ asset('storage/' . $image->image_path) }}" class="card-img-top text-center" alt="Service Image" style="">
+                                                    @break
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card-body text-center">
+                                            <h3 class="card-title">{{$service->name}}</h3>
+                                            <p class="card-text" style="">{{$service->description}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </section>
+
+                <section class="projects section text-center">
+                    <div class="container">
+                        <div class="row pt-5">
+                            @forelse ($projects as $project)
+                                <div class="design-col col-md-2" style="padding: 0.2rem !important;">
+                                    <div class="card">
+                                        <div class="card-img" style="border-radius: 0 !important; height: 480px; background-image: url({{ asset('storage/' . $project->images[0]->image_path) }});"></div>
+                                        <div class="img-overlay">
+                                            <span class="overlay-content">
+                                                <span class="overlay-icon">
+                                                    <a id="myImg" href="{{ asset('storage/' . $project->images[0]->image_path) }}" class="icon-outline circle">
+                                                        <i class="fa-solid fa-plus"></i>								
+                                                    </a>
+                                                    <a class="icon-outline circle">
+                                                        <i class="fa-solid fa-link"></i>								
+                                                    </a>
+                                                </span>
+                                                <span class="overlay-title">
+                                                    <span class="title ">مجمع تعليمي</span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                @empty
+                                <li class="list-group-item">لم يتم العثور على أي مشاريع.</li>
+                            @endforelse
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    @elseif (Str::contains($department->name, 'الاشراف') && ($department->id === 2))
+        <main class="supervision-page">
+            <div class="container site-content">
+                <section class="section top-section">
+                    <div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ asset("images/slide1.png") }}');"></div>
+                    <!-- Main Content -->
+                    <div class="container hero-text">
+                        <div class="content text-center mt-5">
+                            <h1 class="mt-5 mb-5">{{$department->name}}</h1>
+                            <p>{{$department->description}}</p>
+                            <div class="super-btn mt-5 mb-5">
+                                <a href="{{route('pages.contact')}}" type="button" class="other-serv-btn btn btn-warning">لباقي الخدمات</a>
+                                <a type="button" class="requst-serv-btn btn btn-outline-light">تواصل معنا</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="section">
+                    <div class="about">
+                        <div class="container">
+                            <div class="about-content">
+                                <div class="image">
+                                    <img src="{{ asset('images/slide1.png') }}" alt="">
+                                </div>
+                                <div class="text">
+                                    <div class="elementor-widget-container">
+                                        <h2 class="elementor-heading-title elementor-size-default">الإشراف الهندسي</h2>				
+                                    </div>
+                                    <div class="elementor-widget-container mt-2">
+                                        تتحدد مسؤلية الإشراف بناءً على الطريقة المتفق عليها حسب التعاقد.
+                                    </div>
+                                    <div class="elementor-widget-container mt-4">
+                                        <h2 class="elementor-heading-title elementor-size-default">خبراتنا</h2>				
+                                    </div>
+                                    <div class="elementor-widget-container mt-2">
+                                        لدينا خبرة كبيرة في مجال الإشراف الهندسي								
+                                    </div>
+                                    <div class="text-content mt-5 text-center">
+                                        <div class="funfact-content">
+                                            <div class="number-percentage-wraper">
+                                                <span class="number-percentage" data-value="1000" data-animation-duration="3500" data-style="static">1,000</span>
+                                                +
+                                            </div>
+                                            <h5 class="funfact-title">مشاريع تم تنفيذها</h5>								
+                                        </div>
+                                        <div class="funfact-content">
+                                            <div class="number-percentage-wraper">
+                                                <span class="number-percentage" data-value="16" data-animation-duration="3500" data-style="static">16</span>
+                                                +
+                                            </div>
+                                            <h5 class="funfact-title">عاماً من الخبرة في الإشراف</h5>								
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="services section text-center">
+                    <div class="container">
+                        <div class="title text-center mt-5">
+                            <h2 class="mb-3">خدماتنا في مجال</h2>
+                            <div class="border-divider"></div>
+                            <div class="heading-title mt-1">
+                                <h3>{{ $department->name }}</h3>
+                            </div>
+                        </div>
+                        <div class="row slideanim p-5">
+                            @foreach ($services as $service)
+                                <div class="col-sm-4 col-card mb-3">
+                                    <div class="card" style="">
+                                        <div class="text-center align-self-center" style="">
+                                            <div class="info-box-icon text-center">
+                                                @foreach ($service->images as $image)
+                                                    <img src="{{ asset('storage/' . $image->image_path) }}" class="card-img-top text-center" alt="Service Image" style="">
+                                                    @break
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card-body text-center">
+                                            <h3 class="card-title">{{$service->name}}</h3>
+                                            <p class="card-text" style="">{{$service->description}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="section projects text-center">
+                    <div class="container">
+                        <div class="title mt-2 mb-2">
+                            <h2 class="mb-3">أحدث المشاريع</h2>
+                            <div class="border-divider"></div>
+                            <div class="heading-title mt-1">
+                                <p>بعض من اخر المشاريع التي قمنا بالإشراف عليها</p>
+                            </div>
+                        </div>
+                        <div class="row p-5">
+                            @forelse ($projects as $project)
+                                <div class="design-projects col-md-4" style="">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="{{ asset('storage/' . $project->images[0]->image_path) }}" class="card-img-top text-center" alt="Projects Image" style="">
+                                        </div>
+                                        <div class="img-overlay">
+                                            <h4 class="card-title" >
+                                                <span></span>
+                                            </h4>
+                                            <p class=""></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            @empty
+                                <li class="list-group-item">لم يتم العثور على أي مشاريع.</li>
+                            @endforelse
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    @elseif (Str::contains($department->name, 'الإستشارية') && ($department->id === 3))
+        <main class="">
+            <div class="container site-content">
+                <section class="section" style="height: 300px;">
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{{ asset('images/slide1.png') }}" class="bg-img d-block w-100" alt="..." style="height: 280px !important;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section boxed">
+                    <div class="container">
+                        <div class="about-content">
+                            <div class="image">
+                                <img src="{{ asset('images/slide1.png') }}" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="">
+                                    <h2 class="">الإشراف الهندسي</h2>				
+                                </div>
+                                <div class=" mt-2">
+                                    تتحدد مسؤلية الإشراف بناءً على الطريقة المتفق عليها حسب التعاقد.
+                                </div>
+                                <div class="mt-2">
+                                    <h2 class="">خبراتنا</h2>				
+                                </div>
+                                <div class=" mt-2">
+                                    لدينا خبرة كبيرة في مجال الإشراف الهندسي								
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="services section text-center">
+                    <div class="container">
+                        <div class="title text-center mt-5">
+                            <h2 class="mb-3">ماذا نقدم لك ؟​</h2>
+                            <div class="border-divider"></div>
+                            <div class="heading-title">
+                                <h3>خدماتنا في مجال {{ $department->name }}</h3>
+                            </div>
+                        </div>
+                        <div class="row slideanim pt-5">
+                            @foreach ($services as $service)
+                                <div class="col-sm-3 col-card mb-3">
+                                    <div class="card" style="">
+                                        <div class="text-center align-self-center" style="">
+                                            <div class="info-box-icon text-center">
+                                                @foreach ($service->images as $image)
+                                                    <img src="{{ asset('storage/' . $image->image_path) }}" class="card-img-top text-center" alt="Service Image" style="">
+                                                    @break
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card-body text-center">
+                                            <h3 class="card-title">{{$service->name}}</h3>
+                                            <p class="card-text" style="">{{$service->description}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </section>
+
+                <section class="projects section text-center">
+                    <div class="container">
+                        <div class="row pt-5">
+                            @forelse ($projects as $project)
+                                <div class="design-col col-md-2" style="padding: 0.2rem !important;">
+                                <div class="card">
+                                    @foreach($project->images as $image)
+                                        <div class="card-img" style="border-radius: 0 !important; height: 480px; background-image: url({{ asset('storage/' . $image->image_path) }});"></div>
+                                        @break
+                                    @endforeach
+                                    <div class="img-overlay">
+                                        {{-- <h4 class="card-title" >
+                                            <span>{{ $project->name }}</span>
+                                        </h4> --}}
+                                        {{-- <p class="">الموقع</p> --}}
+                                    </div>
+                                </div>
+                                </div>
+                                @empty
+                                <li class="list-group-item">لم يتم العثور على أي مشاريع.</li>
+                            @endforelse
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    @elseif (Str::contains($department->name, 'السلامة') && ($department->id === 4))
+        <main class="">
+            <div class="container site-content">
+                <section class="section" style="height: 300px;">
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{{ asset('images/slide1.png') }}" class="bg-img d-block w-100" alt="..." style="height: 280px !important;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="services section text-center">
+                    <div class="container">
+                        <div class="title text-center mt-5">
+                            <h2 class="mb-3">ماذا نقدم لك ؟​</h2>
+                            <div class="border-divider"></div>
+                            <div class="heading-title">
+                                <h3>خدماتنا في مجال {{ $department->name }}</h3>
+                            </div>
+                        </div>
+                        <div class="row slideanim pt-5">
+                            @foreach ($services as $service)
+                                <div class="col-sm-3 col-card mb-3">
+                                    <div class="card" style="">
+                                        <div class="text-center align-self-center" style="">
+                                            <div class="info-box-icon text-center">
+                                                @foreach ($service->images as $image)
+                                                    <img src="{{ asset('storage/' . $image->image_path) }}" class="card-img-top text-center" alt="Service Image" style="">
+                                                    @break
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card-body text-center">
+                                            <h3 class="card-title">{{$service->name}}</h3>
+                                            <p class="card-text" style="">{{$service->description}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </section>
+
+                <section class="projects section text-center">
+                    <div class="container">
+                        <div class="row pt-5">
+                            @forelse ($projects as $project)
+                                <div class="design-col col-md-2" style="padding: 0.2rem !important;">
+                                <div class="card">
+                                    @foreach($project->images as $image)
+                                        <div class="card-img" style="border-radius: 0 !important; height: 480px; background-image: url({{ asset('storage/' . $image->image_path) }});"></div>
+                                        @break
+                                    @endforeach
+                                    <div class="img-overlay">
+                                        {{-- <h4 class="card-title" >
+                                            <span>{{ $project->name }}</span>
+                                        </h4> --}}
+                                        {{-- <p class="">الموقع</p> --}}
+                                    </div>
+                                </div>
+                                </div>
+                                @empty
+                                <li class="list-group-item">لم يتم العثور على أي مشاريع.</li>
+                            @endforelse
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    @else
+        <main class="">
+            <div class="container site-content">
+                <section class="section" style="height: 300px;">
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{{ asset('images/slide1.png') }}" class="bg-img d-block w-100" alt="..." style="height: 280px !important;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="services section text-center">
+                    <div class="container">
+                        <div class="title text-center mt-5">
+                            <h2 class="mb-3">ماذا نقدم لك ؟​</h2>
+                            <div class="border-divider"></div>
+                            <div class="heading-title">
+                                <h3>خدماتنا في مجال {{ $department->name }}</h3>
+                            </div>
+                        </div>
+                        <div class="row slideanim pt-5">
+                            @foreach ($services as $service)
+                                <div class="col-sm-3 col-card mb-3">
+                                    <div class="card" style="">
+                                        <div class="text-center align-self-center" style="">
+                                            <div class="info-box-icon text-center">
+                                                @foreach ($service->images as $image)
+                                                    <img src="{{ asset('storage/' . $image->image_path) }}" class="card-img-top text-center" alt="Service Image" style="">
+                                                    @break
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card-body text-center">
+                                            <h3 class="card-title">{{$service->name}}</h3>
+                                            <p class="card-text" style="">{{$service->description}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </section>
+
+                <section class="projects section text-center">
+                    <div class="container">
+                        <div class="row pt-5">
+                            @forelse ($projects as $project)
+                                <div class="design-col col-md-2" style="padding: 0.2rem !important;">
+                                <div class="card">
+                                    @foreach($project->images as $image)
+                                        <div class="card-img" style="border-radius: 0 !important; height: 480px; background-image: url({{ asset('storage/' . $image->image_path) }});"></div>
+                                        @break
+                                    @endforeach
+                                    <div class="img-overlay">
+                                        {{-- <h4 class="card-title" >
+                                            <span>{{ $project->name }}</span>
+                                        </h4> --}}
+                                        {{-- <p class="">الموقع</p> --}}
+                                    </div>
+                                </div>
+                                </div>
+                                @empty
+                                <li class="list-group-item">لم يتم العثور على أي مشاريع.</li>
+                            @endforelse
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    @endif
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script defer src="js/script.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+</body>
+</html>

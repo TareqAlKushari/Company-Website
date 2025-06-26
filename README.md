@@ -6,11 +6,19 @@
 
 This repository contains the official website for **Al-Zain for Contracting and Engineering Consultancy** (شركة الزين للمقاولات والاستشارات الهندسية), a leading Yemeni company with over 20 years of experience in engineering consultancy and contracting services. The website is designed to showcase the company’s profile, highlight its projects, and provide clients with direct access to its various engineering services. The site is fully responsive, built primarily with HTML5, CSS3, JavaScript, and Bootstrap 5, and is presented in Arabic (RTL).
 
-## Demo 🚀
+![Banner](https://raw.githubusercontent.com/TareqAlKushari/Company-Website/main/assets/img/banner.png)
+
+## 🚀 Demo
 
 Check out the live demo here: 🔗 [Live Preview](https://tareqalkushari.github.io/Company-Website/)
 
-## Features
+## 📸 Screenshots
+
+*Home Page | About Section | Portfolio | Contact Form*
+
+![Screenshot](assets/img/screenshot1.png)
+
+## ✨ Features
 
 - **Landing/Home Page:** Describes company mission, vision, and achievements.
 - **Branch Locator:** Details on company branches and direct contact options (phone/WhatsApp).
@@ -26,7 +34,17 @@ Check out the live demo here: 🔗 [Live Preview](https://tareqalkushari.github.
 - **Contact Section:** 24/7 open line for free consultations, with a contact form and quick-access buttons.
 - **Modern UI:** Uses Bootstrap, Font Awesome, and custom styles for a polished, professional look.
 
-## Directory Structure
+## 🛠️ Technologies Used
+
+* **HTML5**
+* **CSS3**
+* **Bootstrap 5**
+* **JavaScript (Vanilla)**
+* **FontAwesome**
+* **Google Fonts**
+* **AOS (Animate on Scroll)**
+
+## 📁 Directory Structure
 
 ```
 .
@@ -40,7 +58,7 @@ Check out the live demo here: 🔗 [Live Preview](https://tareqalkushari.github.
 ├── README.md       # This file
 ```
 
-## Getting Started
+## 📦 Getting Started
 
 ### Prerequisites
 
@@ -74,13 +92,44 @@ Check out the live demo here: 🔗 [Live Preview](https://tareqalkushari.github.
 - `assets/images/` : Logos, slides, contact images, project images, etc.
 - `layouts/` : Additional HTML pages (services, about, profile, contact).
 
-## Customization
+## 🧩 Customization
+
+You can easily customize:
 
 - **Logo & Images:** Place company branding in `assets/images/`.
 - **Services & Projects:** Update content in `layouts/` and relevant images in `assets/storage/projects/`.
 - **Contact Details:** Edit branch/contact info in `index.html` or `layouts/contact.html`.
 
-## License
+## 📚 SEO & Performance
+
+* SEO-ready structure with semantic HTML tags
+* Optimized image sizes for fast loading
+* Accessible design practices
+* Mobile-first responsive layout
+
+## 📌 Future Enhancements
+
+* Backend integration for contact form
+* Blog or news section
+* CMS support (e.g., WordPress or Strapi)
+
+## 🤝 Contributing
+
+Contributions are welcome! Fork the repo and submit a pull request.
+
+```bash
+# Fork and clone the repository
+git clone https://github.com/your-username/Company-Website.git
+
+# Create a feature branch
+git checkout -b feature-name
+
+# Commit changes and push
+git commit -m "Add new feature"
+git push origin feature-name
+```
+
+## 📝 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
@@ -89,7 +138,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Website created and maintained by Tareq AlKushari.  
 For business inquiries, updates, or technical issues, please use the contact section on the site or submit an issue via GitHub.
 
-## Author 🙋‍♂️
+## 🙋‍♂️ Author
 
 **Tareq Al-Kushari**   [GitHub](https://github.com/TareqAlKushari) • [LinkedIn](https://www.linkedin.com/) • [Facebook](https://www.facebook.com/profile.php?id=61562736475116&mibextid=ZbWKwL) • [Instagram](https://www.instagram.com/tareq.al.kushari?igsh=MTBhZjRuYnFoMWw1YQ==) • [X](https://x.com/Al_Kushari?t=gU61bcmlDbtf3KV4kqGULA&s=09) • [Email](mailto:tareq.al.kushari@gmail.com) • [Portfolio Website](#)
 

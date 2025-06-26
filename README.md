@@ -6,8 +6,6 @@
 
 This repository contains the official website for **Al-Zain for Contracting and Engineering Consultancy** (شركة الزين للمقاولات والاستشارات الهندسية), a leading Yemeni company with over 20 years of experience in engineering consultancy and contracting services. The website is designed to showcase the company’s profile, highlight its projects, and provide clients with direct access to its various engineering services. The site is fully responsive, built primarily with HTML5, CSS3, JavaScript, and Bootstrap 5, and is presented in Arabic (RTL).
 
-![Banner](assets/banner.png)
-
 ## 🚀 Demo
 
 Check out the live demo here: 🔗 [Live Preview](https://tareqalkushari.github.io/Company-Website/)

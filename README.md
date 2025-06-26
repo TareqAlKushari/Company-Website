@@ -85,4 +85,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 Website created and maintained by Tareq AlKushari.  
 For business inquiries, updates, or technical issues, please use the contact section on the site or submit an issue via GitHub.
 
+## Author 🙋‍♂️
+
+**Tareq Al-Kushari**   [GitHub](https://github.com/TareqAlKushari) • [LinkedIn](https://www.linkedin.com/) • [Facebook](https://www.facebook.com/profile.php?id=61562736475116&mibextid=ZbWKwL) • [Instagram](https://www.instagram.com/tareq.al.kushari?igsh=MTBhZjRuYnFoMWw1YQ==) • [X](https://x.com/Al_Kushari?t=gU61bcmlDbtf3KV4kqGULA&s=09) • [Email](mailto:tareq.al.kushari@gmail.com) • [Portfolio Website](#)
+
 ---
+
+> If you found this helpful, don't forget to **star** the repo and share it with others! ⭐

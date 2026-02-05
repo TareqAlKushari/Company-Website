@@ -8,7 +8,6 @@ This repository contains the official website for **Al-Zain for Contracting and 
 
 ## 🚀 Demo
 
-Check out the live demo here: 🔗 [Live Preview](https://tareqalkushari.github.io/Company-Website/)
 
 ## 📸 Screenshots
 
